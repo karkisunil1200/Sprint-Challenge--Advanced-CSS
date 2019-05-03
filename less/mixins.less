@@ -10,3 +10,12 @@
     font-weight: 700;
     border-radius: 5px;
 }
+
+//text color mixins 
+.text-color(@a) when (lightness(@a) > 50%) {
+    color: black;
+}
+
+.text-color(@a) when (lightness(@a) < 50%) {
+    color: white;
+}

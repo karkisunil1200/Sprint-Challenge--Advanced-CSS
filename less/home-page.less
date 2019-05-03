@@ -107,6 +107,12 @@
         .btnStyle(@button-color;
         2rem);
 
+        &:hover {
+          background-color: rgb(245, 245, 162);
+          color: red;
+          box-shadow: 2px 2px 10px rgba(252, 4, 4, 0.986);
+        }
+
         @media @mobile {
           width: 100%;
         }
@@ -115,6 +121,11 @@
       .walk-img {
         width: 46%;
         margin-left: 4%;
+
+        @media @mobile {
+          width: 90%;
+          margin-top: -2rem;
+        }
 
         img {
           width: 100%;
